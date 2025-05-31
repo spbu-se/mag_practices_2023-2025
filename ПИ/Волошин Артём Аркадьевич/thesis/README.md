@@ -1,17 +1,37 @@
-## Название работы (впишите вместо этого заголовка)
+## Название работы Интеграция системы Apache NIFI в корпоративную среду разработки и автоматизации процессов
 
-**Ключевые слова:** (впишите вместо этих скобок)
+**Ключевые слова:** Apache NIFI, обработка данных, ETL-процессы, кластеризация, отказоустойчивость, Astra Linux, Docker Swarm, мониторинг, интеграция систем.
 
 ### Аннотация
 
-(впишите вместо
-этих скобок)
+В современном мире, где объемы данных растут экспоненциально, а бизнес-процессы становятся все сложнее, критически важным аспектом эффективного управления информационными системами является наличие надежных инструментов для обработки, трансформации и передачи данных. В этом контексте Apache NIFI выделяется как мощное решение с открытым исходным кодом, специально разработанное для автоматизации потоков данных в режиме реального времени. Данная работа посвящена исследованию возможностей Apache NIFI и его интеграции в корпоративную инфраструктуру с целью повышения производительности, обеспечения отказоустойчивости и усиления безопасности процессов обработки информации. Основной целью исследования является разработка и внедрение отказоустойчивого кластерного решения на базе Apache NIFI, развернутого в среде Astra Linux, а также автоматизация ключевых бизнес-процессов компании. Для достижения поставленной цели в работе последовательно решен комплекс взаимосвязанных задач:
+1. Проведен детальный анализ требований корпоративной среды к интеграции Apache NIFI, в ходе которого подтверждены его ключевые преимущества, включая высокую производительность при обработке больших данных, надежные механизмы безопасности (аутентификация, авторизация, шифрование) и гибкую масштабируемость.
+2. Осуществлено глубокое изучение архитектуры и функциональных возможностей Apache NIFI, включая механизмы ETLпреобразований, управление потоками данных в реальном времени, а также интеграционные возможности с такими технологиями, как Apache Kafka, Hadoop, Spark и другими компонентами экосистемы больших данных.
+3. Разработана и апробирована методика развертывания Apache NIFI в Docker Swarm-кластере на базе Astra Linux, обеспечивающая высокую доступность системы, эффективную балансировку нагрузки и соответствие строгим корпоративным требованиям к безопасности.
+4. Реализована автоматизация ключевых бизнес-процессов, включая интеграцию с файловыми хранилищами (SMB), базами данных, почтовыми серверами, а также обработку структурированных данных в форматах JSON, XML, CSV и Excel. Особое внимание уделено обеспечению надежного взаимодействия с внешними системами через HTTPS и контролю версий с использованием NIFI Registry и GitLab.
+5. Проведено всестороннее тестирование производительности системы, в рамках которого определены оптимальные параметры конфигурации потоков выполнения, а также оценена эффективность работы кластера в зависимости от количества узлов и характеристик серверного оборудования.
+6. Разработана и внедрена многоуровневая система мониторинга, включающая сбор инфраструктурных и сервисных метрик, механизмы алертинга на основе bash-скриптов, а также инструменты для оперативного масштабирования и оптимизации работы системы.
+Практическая значимость проведенного исследования подтверждается успешным внедрением разработанного решения в промышленную эксплуатацию, где оно продемонстрировало стабильность работы на уровне uptime >99.95% в течение 12 месяцев. Дополнительными преимуществами внедрения стали:
+• снижение затрат на разработку и поддержку ETL-процессов по сравнению с традиционными подходами;
+• повышение прозрачности выполнения бизнес-процессов за счет централизованного управления потоками данных;
+• возможность масштабирования решения на другие предприятия холдинга, что открывает перспективы для создания единого цифрового пространства.
+Результаты работы свидетельствуют о том, что Apache NIFI является эффективным инструментом для цифровой трансформации компаний, обеспечивающим стандартизацию процессов интеграции данных, повышение надежности ИТ-инфраструктуры и создание основы для дальнейшего развития корпоративных систем.
 
-## Thesis Title (fill in instead of this heading)
+## Thesis Title Integration of Apache NIFI into the corporate development and process automation environment
 
-**Keywords:** (fill in instead of these braces)
+**Keywords:** Apache NIFI, data processing, ETL processes, clustering, fault tolerance, Astra Linux, Docker Swarm, monitoring, system integration.
 
 ### Abstract
 
-(fill in instead of
-these braces)
+In today's world, where data volumes are growing exponentially and business processes are becoming more complex, a critical aspect of effective information system management is the availability of reliable tools for data processing, transformation and transmission. In this context, Apache NIFI stands out as a powerful open source solution specifically designed to automate real-time data flows. This paper is devoted to the study of Apache NIFI capabilities and its integration into the corporate infrastructure in order to improve performance, ensure fault tolerance and enhance the security of information processing processes. The main purpose of the research is to develop and implement a fault-tolerant cluster solution based on Apache NIFI, deployed in the Astra Linux environment, as well as automate key business processes of the company. To achieve this goal, a set of interrelated tasks has been consistently solved in the work:
+1. A detailed analysis of the requirements of the corporate environment for Apache NIFI integration was carried out, during which its key advantages were confirmed, including high performance in processing big data, reliable security mechanisms (authentication, authorization, encryption) and flexible scalability.
+2. An in-depth study of the architecture and functionality of Apache NIFI has been carried out, including ETL transformation mechanisms, real-time data flow management, as well as integration capabilities with technologies such as Apache Kafka, Hadoop, Spark and other components of the big data ecosystem.
+3. The Apache NIFI deployment methodology has been developed and tested in a Docker Swarm cluster based on Astra Linux, ensuring high system availability, efficient load balancing and compliance with strict corporate security requirements.
+4. Automation of key business processes has been implemented, including integration with file storage (SMB), databases, mail servers, as well as processing structured data in JSON, XML, CSV and Excel formats. Special attention is paid to ensuring reliable interaction with external systems via HTTPS and version control using NIFI Registry and GitLab.
+5. Comprehensive system performance testing was conducted, which determined the optimal configuration parameters for execution flows, as well as evaluated the cluster's performance depending on the number of nodes and characteristics of the server equipment.
+6. A multi-level monitoring system has been developed and implemented, including the collection of infrastructure and service metrics, alert mechanisms based on bash scripts, as well as tools for operational scaling and optimization of the system.
+The practical significance of the research is confirmed by the successful implementation of the developed solution in industrial operation, where it demonstrated stability at uptime >99.95% for 12 months. Additional advantages of the introduction of steel:
+• lower costs for the development and support of ETL processes compared to traditional approaches;
+• increasing the transparency of business processes through centralized data flow management;
+• the ability to scale the solution to other enterprises of the holding, which opens up prospects for creating a single digital space.
+The results of the work indicate that Apache NIFI is an effective tool for digital transformation of companies, providing standardization of data integration processes, increasing the reliability of IT infrastructure and creating the basis for further development of corporate systems.
